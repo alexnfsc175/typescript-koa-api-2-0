@@ -1,5 +1,7 @@
 /node_modules
+__tests__/database.sqlite
 /build
 /src/database
 !/src/database/migrations
 !/src/database/seeders
+package-lock.json

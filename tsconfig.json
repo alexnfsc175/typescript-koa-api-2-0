@@ -28,7 +28,7 @@
         "allowSyntheticDefaultImports": true,
         "strict": true,
         "resolveJsonModule": true,
-        "isolatedModules": true,
+        "isolatedModules": false,
         "noEmit": false,
         "listEmittedFiles": false,
         "traceResolution": false,

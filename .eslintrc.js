@@ -50,6 +50,7 @@ module.exports = {
                 allowSamePrecedence: true,
             },
         ],
+        "require-atomic-updates": 0,
         'eol-last': [2, 'always'],
         'no-confusing-arrow': 0,
         'arrow-parens': [2, 'as-needed'],

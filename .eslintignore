@@ -1,3 +1,4 @@
 __tests__/**
+jest.config.js
 src/config/database.ts
 src/database/**

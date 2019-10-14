@@ -46,5 +46,12 @@ User.init(
         tableName: 'users',
         sequelize,
         timestamps: true,
+        // não permite deletar do banco, mas inseri na coluna deletedAt a data da exclusão
+        // se o timestamps estiver ativado
+        // paranoid: true,
+
+        // não adiciona camelcase para atributos gerados automaticamente
+        // então se definirmos updatedAt ele será criado como updated_at
+        // underscored: true,
     },
 );

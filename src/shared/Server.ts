@@ -5,6 +5,7 @@
  */
 
 // import { Request, Response, NextFunction } from 'express';
+import Middleware from '../app/middleware';
 import Koa, { Context } from 'koa';
 import mount from 'koa-mount';
 import Router from 'koa-router';
@@ -31,9 +32,10 @@ export class Server {
     constructor(showLogs?: boolean) {
         this.koa = new Koa();
         this.showLogs = showLogs || false;
+        Middleware.init(this);
     }
 
-    protected get app(): Koa {
+    public get app(): Koa {
         return this.koa;
     }
 
