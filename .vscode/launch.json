@@ -14,7 +14,7 @@
             "port": 9229
         },
         {
-            "name": "Launch server.js via nodemon",
+            "name": "Launch via nodemon",
             "type": "node",
             "request": "launch",
             // "runtimeExecutable": "nodemon",

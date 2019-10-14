@@ -1,11 +1,12 @@
 import * as http from 'http';
 
 import { AppServer } from './app';
+import { environment } from './environments';
 import * as serverHandlers from './lib/serverHandlers';
 
 const app = new AppServer().app;
 
-const port: string | number | boolean = serverHandlers.normalizePort(process.env.PORT || 4955);
+const port: string | number | boolean = serverHandlers.normalizePort(environment.PORT || 3000);
 
 const server: http.Server = http.createServer(app.callback());
 

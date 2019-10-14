@@ -1,9 +1,8 @@
 import { Context } from 'koa';
 
 import { Controller, Get } from '../../shared/decorators';
+import { User } from '../models/User';
 
-// import { User } from '../../../models/User';
-// import { Controller, Get } from '../../../shared/decorators';
 /**
  * @export
  * @class UserController
@@ -12,13 +11,15 @@ import { Controller, Get } from '../../shared/decorators';
 export class UserController {
     @Get()
     async getUser(ctx: Context) {
-        // console.log(User);
-        // const user = await User.create({ name: 'Alex', email: 'alex@gmail.com', password_hash: '232323' });
-        // const users = await User.findAll({ where: { name: 'Alex' } });
-        // console.log(users);
-        ctx.body = [{ name: 'Caio' }];
+        console.log(User);
+        await User.create({
+            name: 'Alex',
+            email: 'alex@gmail.com',
+            passwordHash: '232323',
+        });
+        const users = await User.findAll({ where: { name: 'Alex' } });
+        console.log(users);
+        ctx.body = users;
         ctx.status = 200;
     }
 }
-
-// export default new UserRouter();

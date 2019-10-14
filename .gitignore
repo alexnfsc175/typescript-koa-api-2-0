@@ -1,2 +1,5 @@
 /node_modules
 /build
+/src/database
+!/src/database/migrations
+!/src/database/seeders
