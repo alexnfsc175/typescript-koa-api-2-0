@@ -1,0 +1,170 @@
+{
+    // Editor settings
+    "editor.snippetSuggestions": "bottom",
+    "editor.cursorBlinking": "solid",
+    "editor.largeFileOptimizations": false,
+    "editor.suggestSelection": "first",
+    "editor.autoIndent": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": false,
+        "source.fixAll": true
+    },
+    "editor.codeLens": false,
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorStyle": "line",
+    "editor.fontSize": 18,
+    // "editor.fontFamily": "Dank Mono, Operator Mono, Fira Code Retina, Inconsolata, Menlo",
+    "editor.fontFamily": "Dank Mono, Operator Mono, Fira Code, Inconsolata, Menlo",
+    "editor.fontLigatures": true,
+    "editor.fontWeight": "300", // Light
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": false,
+    "editor.formatOnSave": true,
+    "editor.letterSpacing": 0.5,
+    "editor.lineHeight": 24,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.tabCompletion": "on",
+    "editor.tabSize": 2,
+    "editor.wordWrap": "off",
+    // "editor.renderWhitespace": "boundary",
+    "editor.rulers": [80, 120],
+    // Prettier
+    "prettier.singleQuote": true,
+    "prettier.printWidth": 100,
+    "prettier.semi": true,
+    "prettier.bracketSpacing": true,
+    "prettier.arrowParens": "always",
+    "dart.closingLabels": false,
+    "breadcrumbs.enabled": true,
+    "workbench.colorTheme": "One Dark Pro Vivid",
+    "workbench.iconTheme": "material-icon-theme",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "php.suggest.basic": false,
+    "intelephense.files.exclude": [
+        "**/.git/**",
+        "**/.svn/**",
+        "**/.hg/**",
+        "**/CVS/**",
+        "**/.DS_Store/**",
+        "**/node_modules/**",
+        "**/bower_components/**",
+        "**/vendor/**/{Test,test,Tests,tests}/**",
+        "**/dbdata/**"
+    ],
+    "intelephense.format.enable": true,
+    // "php.executablePath": "/usr/bin/php",
+    "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+    "php-cs-fixer.executablePathWindows": "", //eg: php-cs-fixer.bat
+    "php-cs-fixer.onsave": false,
+    "php-cs-fixer.rules": "@PSR2",
+    "php-cs-fixer.config": ".php_cs",
+    "php-cs-fixer.autoFixByBracket": true,
+    "php-cs-fixer.autoFixBySemicolon": false,
+    "php-cs-fixer.formatHtml": false,
+    "php-cs-fixer.documentFormattingProvider": true,
+    "php-cs-fixer.allowRisky": false,
+    "php-cs-fixer.lastDownload": 1570854051801,
+    // "php.validate.enable": true,
+    // "php.validate.executablePath": "/usr/bin/php",
+    // "php.validate.run": "onType",
+    "window.zoomLevel": 0,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "gitlens.mode.statusBar.alignment": "left",
+    "sync.gist": "7dd598151d8939808f8ecf1d108d6e34",
+    "sync.quietSync": false,
+    "sync.removeExtensions": true,
+    "sync.syncExtensions": true,
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.forceDownload": false,
+    // prettier.  (default: false)
+    // "terminal.integrated.rendererType": "dom",
+    "C_Cpp.clang_format_path": "/usr/bin/clang-format",
+    "window.titleBarStyle": "custom",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    // "[typescript]": {
+    //     "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // },
+    "yaml.format.enable": false,
+    "yaml.format.singleQuote": false,
+    "yaml.format.bracketSpacing": true,
+    // "yaml.format.proseWrap": "never",
+    // "yaml.format.printWidth": 80,
+    "yaml.validate": true,
+    "yaml.hover": true,
+    "yaml.completion": true,
+    "yaml.schemas": {},
+    "yaml.schemaStore.enable": false,
+    "[yaml]": {
+        "editor.formatOnSave": false,
+        "editor.autoIndent": false,
+        "editor.renderWhitespace": "none",
+        "editor.wordWrap": "on",
+        "files.trimTrailingWhitespace": false
+    },
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+    },
+    "eslint.packageManager": "yarn",
+    "eslint.autoFixOnSave": true,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        {
+            "language": "typescript",
+            "autoFix": true
+        },
+        {
+            "language": "typescriptreact",
+            "autoFix": true
+        }
+    ],
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+    },
+    "gitlens.settings.mode": "advanced",
+    // "files.autoSave": "off",
+    "files.autoSaveDelay": 1000,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/*.js": {
+            "when": "$(basename).ts"
+        },
+        "**/*.js.map": {
+            "when": "$(basename)"
+        },
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "files.associations": {
+        "*.php": "php"
+    },
+    "files.hotExit": "onExit",
+    "files.defaultLanguage": "typescript",
+    "files.trimTrailingWhitespace": true,
+    "html.format.wrapAttributes": "force-aligned",
+    "html.format.enable": true,
+    "editor.formatOnSaveTimeout": 5000
+}

@@ -1,0 +1,49 @@
+{
+  "name": "test_t",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "eslint": "node ./node_modules/bin/eslint",
+    "lint:ts": "eslint --ext=ts src --fix",
+    "start:debug": "npm run transpile && DEBUG=app:* node --inspect=0.0.0.0:9229 ./build/dist/Server.js",
+    "start:dev": "npm run transpile && node ./build/dist/Server.js",
+    "start:local": "nodemon",
+    "transpile": "node ./node_modules/typescript/bin/tsc"
+  },
+  "dependencies": {
+    "debug": "^4.1.1",
+    "koa": "^2.10.0",
+    "koa-body": "^4.1.1",
+    "koa-mount": "^4.0.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "nodemon": "^1.19.3",
+    "pg": "^7.12.1",
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^5.19.6",
+    "typescript": "^3.6.4"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.5",
+    "@types/koa": "^2.0.50",
+    "@types/koa-mount": "^4.0.0",
+    "@types/koa-router": "^7.0.42",
+    "@types/node": "^12.7.12",
+    "@typescript-eslint/eslint-plugin": "^2.3.3",
+    "@typescript-eslint/parser": "^2.3.3",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-import-helpers": "^1.0.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "husky": "^3.0.9",
+    "prettier": "^1.18.2",
+    "sequelize-cli": "^5.5.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && npm run lint"
+    }
+  }
+}

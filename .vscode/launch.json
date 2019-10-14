@@ -1,0 +1,30 @@
+{
+    // Use o IntelliSense para aprender sobre possíveis atributos.
+    // Passe o mouse para ver as descrições dos atributos existentes.
+    // Para obter mais informações, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch via npm",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["run-script", "start:local"],
+            "port": 9229
+        },
+        {
+            "name": "Launch server.js via nodemon",
+            "type": "node",
+            "request": "launch",
+            // "runtimeExecutable": "nodemon",
+            // "program": "${workspaceFolder}/server.js",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["run-script", "start:local"],
+            "restart": true,
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "port": 9229
+        }
+    ]
+}
